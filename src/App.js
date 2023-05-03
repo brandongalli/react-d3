@@ -16,7 +16,7 @@ function App() {
           // imgList.map(data => ( // eslint-disable-line no-use-before-define
           imgUrls && imgUrls.map(data => (
             // <Image src={`data:image/png;base64,${data}`} height={100} width={100} priority /> // eslint-disable-next-line no-use-before-define
-            <img src={data} height={100} width={100} /> // eslint-disable-next-line no-use-before-define
+            <img key={data} src={data} height={100} width={100} /> // eslint-disable-next-line no-use-before-define
           ))}
       </div>
     </div>
