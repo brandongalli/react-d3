@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
-import * as d3 from 'd3';
 import imageUrls from './image_urls.json';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   const [imgUrls, setImgUrls] = useState();
   useEffect(() => {
     setImgUrls(imageUrls)
-  }, [imageUrls])
+  }, [])
   return (
     <div className="App">
       <div id="my-svg" >
